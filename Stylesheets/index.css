@@ -1,0 +1,42 @@
+body {
+    /* BACKGROUND*/
+    background-color: #c2d5c8;
+    padding-left: 15%;
+    padding-right: 15%;
+    /* FONT */
+    color: #738276;
+    font-family: "Quicksand", "Montserrat", "Open Sans", "Bellota Text", "Poiret One", "Verdana", sans-serif;
+    font-weight: 300px;
+    font-optical-sizing: auto;
+    font-weight: 300pt;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+
+/*
+FONTS:
+
+For headings - Copperplate?
+For text - Courier New? - it's pretty but I actually find monospace harder to read than Sans-Serif.
+    Maybe Verdana? Seems easiest to read so far. Tahoma too close together. Arial a bit boring.
+
+From W3Schools:
+Cinzel for headings? Suggests pairing with Fauna One for text, but I find it a bit harder to read.
+    Noto Sans seems readable for text.
+    Poppins also very readable.
+    Open Sans also seems readable.
+
+GOOGLE FONTS:
+    "CALM" - 
+    Poiret One also readable, quite stylish.*DONE*
+    Quicksand.*DONE*
+    Montserrat.*DONE*
+    Bellota Text.
+    Open Sans.
+
+    "ACTIVE" - 
+    Farsan.
+    Edu SA Beginner.
+*/
