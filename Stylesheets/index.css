@@ -1,8 +1,11 @@
+/* ----- GLOBAL STYLE ----- */
+
 body {
     /* BACKGROUND*/
-    background-color: #c2d5c8;
-    padding-left: 15%;
-    padding-right: 15%;
+    background-color: #e6faec;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
     /* FONT */
     color: #738276;
     font-family: "Quicksand", "Montserrat", "Open Sans", "Bellota Text", "Poiret One", "Verdana", sans-serif;
@@ -14,29 +17,47 @@ body {
       "wdth" 100;
 }
 
+/* ----- HEADER STYLE ----- */
 
-/*
-FONTS:
+header {
+    background-color: #c2d5c8;
+    padding-top: 50px;
+}
 
-For headings - Copperplate?
-For text - Courier New? - it's pretty but I actually find monospace harder to read than Sans-Serif.
-    Maybe Verdana? Seems easiest to read so far. Tahoma too close together. Arial a bit boring.
+#navUnorderedList {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #738276;
+    text-align: center;
+}
 
-From W3Schools:
-Cinzel for headings? Suggests pairing with Fauna One for text, but I find it a bit harder to read.
-    Noto Sans seems readable for text.
-    Poppins also very readable.
-    Open Sans also seems readable.
+#navUnorderedList li {
+    display: inline;
+    text-align: center;
+}
 
-GOOGLE FONTS:
-    "CALM" - 
-    Poiret One also readable, quite stylish.*DONE*
-    Quicksand.*DONE*
-    Montserrat.*DONE*
-    Bellota Text.
-    Open Sans.
+#navUnorderedList li a {
+    color: honeydew;
+    text-align: center;
+    text-decoration:none;
+    padding: 10px 30px;
+}
 
-    "ACTIVE" - 
-    Farsan.
-    Edu SA Beginner.
-*/
+/* ----- MAIN STYLE ----- */
+
+main {
+    margin: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* ----- FOOTER STYLE ----- */
+
+footer {
+    background-color: #c2d5c8;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
