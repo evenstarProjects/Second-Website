@@ -2,12 +2,12 @@
 
 body {
     /* BACKGROUND*/
-    background-color: #e6faec;
+    background-color: #faf3e0;
     max-width: 100%;
     padding: 0;
     margin: 0;
     /* FONT */
-    color: #738276;
+    color: #4a4a4a;
     font-family: "Quicksand", "Montserrat", "Open Sans", "Bellota Text", "Poiret One", "Verdana", sans-serif;
     font-weight: 300px;
     font-optical-sizing: auto;
@@ -20,14 +20,14 @@ body {
 /* ----- HEADER STYLE ----- */
 
 header {
-    background-color: #c2d5c8;
+    background-color: #a0c1b8;
     padding-top: 50px;
 }
 
 #navUnorderedList {
     list-style-type: none;
     overflow: hidden;
-    background-color: #738276;
+    background-color: #619587;
     text-align: center;
 }
 
@@ -43,6 +43,14 @@ header {
     padding: 10px 30px;
 }
 
+li a:hover {
+    background-color: #f8b878;
+}
+
+.active {
+    background-color: #008080;
+}
+
 /* ----- MAIN STYLE ----- */
 
 main {
@@ -56,7 +64,7 @@ main {
 /* ----- FOOTER STYLE ----- */
 
 footer {
-    background-color: #c2d5c8;
+    background-color: #a0c1b8;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
