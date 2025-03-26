@@ -9,6 +9,7 @@ body {
     /* FONT */
     color: #4a4a4a;
     font-family: "Quicksand", "Montserrat", "Open Sans", "Bellota Text", "Poiret One", "Verdana", sans-serif;
+    font-size: 16pt;
     font-weight: 300px;
     font-optical-sizing: auto;
     font-weight: 300pt;
@@ -17,11 +18,14 @@ body {
       "wdth" 100;
 }
 
-/* ----- HEADER STYLE ----- */
+/* ---------- HEADER STYLE ---------- */
 
 header {
+    height: 98vh;
     background-color: #a0c1b8;
-    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #navUnorderedList {
@@ -34,9 +38,73 @@ header {
 #navUnorderedList li {
     display: inline;
     text-align: center;
+    text-decoration: none;
 }
 
 #navUnorderedList li a {
+    color: honeydew;
+    text-align: center;
+    padding: 10px 30px;
+}
+
+li a:hover {
+    background-color: #f8b878;
+}
+
+.active {
+    background-color: #008080;
+}
+
+
+
+/* --- Hero Div --- */
+
+/*
+.heroDiv {
+    flex-grow: 1;
+    flex-direction: column;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.heroDiv h1 {
+    font-size: 4rem;
+}
+
+.heroDiv ul {
+    padding-inline-start: 0;
+}
+
+.heroDiv ul li {
+    display: inline;
+    padding: 1em;
+    text-decoration: none;
+}
+*/
+
+/* --- Navbar --- */
+
+.navUnorderedList {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #619587;
+    text-align: center;
+}
+
+.navUnorderedList ul {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navUnorderedList li {
+    display: inline;
+    text-align: center;
+}
+
+.navUnorderedList li a {
     color: honeydew;
     text-align: center;
     text-decoration:none;
@@ -49,9 +117,10 @@ li a:hover {
 
 .active {
     background-color: #008080;
+    padding: 16px 10px;
 }
 
-/* ----- MAIN STYLE ----- */
+/* ---------- MAIN STYLE ---------- */
 
 main {
     margin: 2%;
@@ -61,7 +130,7 @@ main {
     padding-bottom: 10px;
 }
 
-/* ----- FOOTER STYLE ----- */
+/* ---------- FOOTER STYLE ---------- */
 
 footer {
     background-color: #a0c1b8;

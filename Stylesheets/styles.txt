@@ -1,0 +1,28 @@
+NOTES ON CSS STYLES
+-------------------
+
+FILE NAME: index.css - 
+
+Element: body.
+    Style: padding 0 and margin 0.
+        Purpose: to allow the header to span the full width of the page.
+        Reason: I can set the main to have padding, but doing it the other way didn't work (setting padding then specifying 0 in header).
+    Style: font-weight 300px.
+        Purpose: this is the pt required for "Light" style font.
+        Reason: it is still clear and readable when on smaller screens.
+
+Element: header.
+    Style: height 90vh.
+        Purpose: to create a Hero Header that is almost the full length of the screen (with a bit of main poking out).
+        Reason: it looks cool...
+    Style: display flex.
+        Purpose: doing it as Flexbox maintains its positioning.
+        Reason: it looks cool...
+    Style: flex direction column.
+        Purpose: to align the flexbox items to go downwards.
+        Reason: the default has the items go across which looks weird.
+    Style: justify content space between.
+        Purpose: to make the Navbar be placed at the bottom of the Header.
+        Reason: so it can travel with scrolling later.
+    
+    
