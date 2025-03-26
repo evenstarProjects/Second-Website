@@ -59,6 +59,7 @@ header {
 
 .navUnorderedList {
     list-style-type: none;
+    line-height: 0.1;
     overflow: hidden;
     background-color: #619587;
     text-align: center;
