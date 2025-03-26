@@ -28,13 +28,8 @@ header {
     justify-content: space-between;
 }
 
-#navUnorderedList {
-    list-style-type: none;
-    overflow: hidden;
-    background-color: #619587;
-    text-align: center;
-}
 
+/*
 #navUnorderedList li {
     display: inline;
     text-align: center;
@@ -53,20 +48,19 @@ li a:hover {
 
 .active {
     background-color: #008080;
-}
+} */
 
 
 
 /* --- Hero Div --- */
 
-/*
+
 .heroDiv {
     flex-grow: 1;
     flex-direction: column;
     display:flex;
     align-items: center;
     justify-content: center;
-    padding: 15px;
 }
 
 .heroDiv h1 {
@@ -82,21 +76,16 @@ li a:hover {
     padding: 1em;
     text-decoration: none;
 }
-*/
 
-/* --- Navbar --- */
+
+/* --- Navbar correct --- */
 
 .navUnorderedList {
     list-style-type: none;
     overflow: hidden;
     background-color: #619587;
     text-align: center;
-}
-
-.navUnorderedList ul {
-    display: flex;
-    text-decoration: none;
-    text-align: center;
+    padding: 0px 30px;
 }
 
 .navUnorderedList li {
@@ -108,7 +97,7 @@ li a:hover {
     color: honeydew;
     text-align: center;
     text-decoration:none;
-    padding: 10px 30px;
+    padding: 30px;
 }
 
 li a:hover {
