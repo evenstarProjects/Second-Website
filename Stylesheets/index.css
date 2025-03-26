@@ -91,14 +91,57 @@ li a:hover {
 
 /* ---------- MAIN STYLE ---------- */
 
-main {
+/* main {
     margin: 2%;
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 10px;
     padding-bottom: 10px;
+} */
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
+.aside1 {
+    grid-column: 1 / 2;
+    background-color: #a0c1b8;
+    margin: 20px;
+    margin-left: 0px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.subtitle1 {
+    grid-column: 2 / 6;
+}
+
+.aside2 {
+    grid-column: 6;
+    grid-row-start: 1;
+}
+
+.mainSection1 {
+    grid-column: 2 / 6;
+}
+
+.mainSection2 {
+    grid-column: 2 / 6;
+}
+
+.mainSection3 {
+    grid-column: 2 / 6;
+}
+
+.mainSection4 {
+    grid-column: 2 / 6;
+}
+
+/*TO DO: PUT THE SECTIONS IN THE HTML INTO CORRECT GRID COLUMNS (GIVE THEM A CLASS FIRST).
+h2 class = subtitle1
+section classes = mainSection1, mainSection2, mainSection3, mainSection4.
+aside classes = 
 
 
 /* ---------- FOOTER STYLE ---------- */
