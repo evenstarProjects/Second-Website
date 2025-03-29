@@ -13,41 +13,69 @@ body {
     font-optical-sizing: auto;
     font-weight: 300pt;
     font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
+    font-variation-settings: "wdth" 100;
 }
 
 /* ----- HEADER STYLE ----- */
 
 header {
     background-color: #a0c1b8;
-    padding-top: 50px;
+    text-align: center;
+    padding: 20px;
 }
 
-#navUnorderedList {
+header {
+    background-color: #a0c1b8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: visible;
+}
+
+/* ---------- STICKY NAV STYLE ---------- */
+
+.navBar {
     list-style-type: none;
-    overflow: hidden;
     background-color: #619587;
     text-align: center;
+    height: 50px;
+    margin: 0; /*added*/
+    padding: 0; /*added*/
 }
 
-#navUnorderedList li {
-    display: inline;
+.navBar ul {
+    display:flex; /*added*/
+    justify-content: center; /*added*/
+    align-items: center; /*added*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     text-align: center;
 }
 
-#navUnorderedList li a {
+.navBar li {
+    display: inline-flex;
+    text-align: center;
+}
+
+.navBar li a {
     color: honeydew;
     text-align: center;
-    text-decoration:none;
-    padding: 10px 30px;
+    text-decoration: none;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    box-sizing: border-box;
+    line-height: 50px;
 }
 
-li a:hover {
+.navBar li a:hover {
     background-color: #f8b878;
 }
 
-.active {
+.navBar li a.active {
     background-color: #008080;
 }
 

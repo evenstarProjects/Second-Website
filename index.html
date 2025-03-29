@@ -10,8 +10,8 @@
 
         <!-- META INFO -->
         <meta charset="UTF-8">
-        <meta name="description" content="A Webpage aimed particularly at people with physical and mental health disabilities, to achieve their health and fitness goals in a safe and holistic way.">
-        <meta name="keywords" content="Fitness, Health, Personal Training, Exercise, Recovery, Safe, Blog, Holistic, Disability, Mental Health, recovery for Eating Disorders, healthy exercise for Eating Disorders, exercise for Neurodivergent, exercise for LGBTQ+">
+        <meta name="description" content="A Webpage aimed particularly at people with physical and mental health disabilities, who are Neurodiverse, or members of the LGBTQ+ community, to learn and achieve their health and fitness goals in a safe and holistic way.">
+        <meta name="keywords" content="Fitness, Health, Personal Training, Exercise, Recovery, Injury Recovery, Safe Exercise, Fitness Blog, Holistic Exercise, Exercise for Disability, Exercise for Mental Health, Recovery for Eating Disorders, Healthy exercise for Eating Disorders, Exercise for Neurodivergent, Exercise for LGBTQ+">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- STYLES -->
@@ -19,7 +19,8 @@
         <!--(Open Sans = main font - links 1+2 for performance, link 3 for actual font)-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&family=Bellota+Text:wght@400;700&family=Poiret+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&family=Bellota+Text:wght@400;700&family=Poiret+One&display=swap" rel="stylesheet"> <!--(Text Font)-->
+        <link href="https://fonts.googleapis.com/css2?family=Balthazar&display=swap" rel="stylesheet"> <!--(Heading Font)-->
 
     </head>
 
@@ -30,7 +31,7 @@
         <header>
 
             <div class="heroDiv">
-                <h1>Helix: Holistic Fitness Company</h1>
+                <h1>HELIX: Holistic Fitness Company</h1>
                 <p>It's in your DNA.</p>
                 <ul>
                     <li>Absorb.</li>
@@ -39,37 +40,46 @@
                 </ul>
             </div>
 
-            <div class="stickyNav">
-                <nav class="navBar">
-                    <ul>
-                        <li><a href="index.html" class="active">Homepage</a></li>
-                        <li><a href="tools.html">Useful Tools</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="quiz.html">Take our Quiz</a></li>
-                        <li><a href="login.html">User Login</a></li>
-                    </ul>
-                </nav>
-            </div>
-
         </header>
 
+        <div class="stickyNav">
+            <nav class="navBar">
+                <ul>
+                    <li><a href="index.html" class="active">Homepage</a></li>
+                    <li><a href="exercise.html">Exercise</a></li>
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                    <li><a href="mentalHealth.html">Mental Health</a></li>
+                    <li><a href="login.html">Member Login</a></li>
+                </ul>
+            </nav>
+        </div>
 
 
         <!-- MAIN (inc. Subtitle, Paragraph Sections, and 2 Asides) -->
         <main>
 
+            <aside class="internalLinkAside">
+                <h3>Aside 1 - Links you may be interested in:</h3>
+                <a href="">Description of the Link.</a>
+                <a href="">Description of the Link.</a>
+                <a href="">Description of the Link.</a>
+            </aside>
+
+            <aside class="externalLinkAside">
+                <h3>Aside 2 - Links you may be interested in:</h3>
+                <a href="">Description of the Link.</a>
+                <a href="">Description of the Link.</a>
+                <a href="">Description of the Link.</a>
+            </aside>
+
             <section class="gridContainer">
 
-                <aside class="aside1">
-                    <h3>Aside 1 - Links you may be interested in:</h3>
-                    <a href="">Description of the Link.</a>
-                    <a href="">Description of the Link.</a>
-                    <a href="">Description of the Link.</a>
-                </aside>
+                <section class="welcomeIntro">
+                    <h2 class="subtitle1">Welcome to our Community!</h2>
+                    <p></p>
+                </section>
 
-                <h2 class="subtitle1">Welcome!</h2>
-
-                <section class="mainSection1">
+                <section class="aboutUs">
                     <h3>About Us</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -79,7 +89,7 @@
                     </p>
                 </section>
 
-                <section class="mainSection2">
+                <section class="ourMission">
                     <h3>Our Mission</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -104,13 +114,6 @@
                     <p>For access to exclusive Helix Holistics content, sign up and become the next member of our family!</p>
                 </section>
 
-                <aside class="aside2">
-                    <h3>Aside 2 - Links you may be interested in:</h3>
-                    <a href="">Description of the Link.</a>
-                    <a href="">Description of the Link.</a>
-                    <a href="">Description of the Link.</a>
-                </aside>
-
             </section>
 
         </main>
@@ -122,11 +125,11 @@
 
             <section>
             <h4>Follow Us:</h4>
-                <a href=""><img src="Images/socialMedia/Facebook_logo.png" alt="Facebook" width="50px"></a>
-                <a><img src="Images/socialMedia/Instagram_logo.png" alt="Instagram" width="50px"></a>
-                <a><img src="Images/socialMedia/Discord_logo.png" alt="Discord" width="50px"></a>
-                <a><img src="Images/socialMedia/X_logo.png" alt="X" width="50px"></a>
-                <a><img src="Images/socialMedia/YouTube_logo.png" alt="YouTube" width="50px"></a>
+                <a href=""><img src="Images/socialMedia/Facebook_logo.png" alt="Link to my Facebook page." width="50px"></a>
+                <a><img src="Images/socialMedia/Instagram_logo.png" alt="Link to my Instagram pag.e" width="50px"></a>
+                <a><img src="Images/socialMedia/Discord_logo.png" alt="Link to my Discord." width="50px"></a>
+                <a><img src="Images/socialMedia/X_logo.png" alt="Link to my X page." width="50px"></a>
+                <a><img src="Images/socialMedia/YouTube_logo.png" alt="Link to my YouTube channel." width="50px"></a>
             </section>
 
             <section>

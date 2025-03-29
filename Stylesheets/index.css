@@ -6,16 +6,15 @@ body {
     max-width: 100%;
     padding: 0;
     margin: 0;
+    line-height: 1.6;
     /* FONT */
     color: #4a4a4a;
     font-family: "Quicksand", "Montserrat", "Open Sans", "Bellota Text", "Poiret One", "Verdana", sans-serif;
     font-size: 16pt;
-    font-weight: 300px;
     font-optical-sizing: auto;
-    font-weight: 300pt;
+    font-weight: 300;
     font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
+    font-variation-settings: "wdth" 100;
 }
 
 
@@ -23,7 +22,7 @@ body {
 /* ---------- HEADER STYLE ---------- */
 
 header {
-    height: 98vh;
+    height: 94vh;
     background-color: #a0c1b8;
     display: flex;
     flex-direction: column;
@@ -43,6 +42,7 @@ header {
 
 .heroDiv h1 {
     font-size: 4rem;
+    font-family: "Balthazar", "Copperplate", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .heroDiv ul {
@@ -56,43 +56,56 @@ header {
 }
 
 
-/* --- Navbar --- */
+/* ---------- STICKY NAV STYLE ---------- */
+
+.stickyNav {
+    position: sticky;
+    top: 0;
+}
 
 .navBar {
     list-style-type: none;
     background-color: #619587;
     text-align: center;
-    padding: 0px 30px;
     height: 50px;
+    margin: 0; /*added*/
+    padding: 0; /*added*/
 }
 
-.stickyNav {
-    display: block;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+.navBar ul {
+    display:flex; /*added*/
+    justify-content: center; /*added*/
+    align-items: center; /*added*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
 }
 
 .navBar li {
-    display: inline;
+    display: inline-flex;
     text-align: center;
 }
 
 .navBar li a {
     color: honeydew;
     text-align: center;
-    text-decoration:none;
-    padding: 30px;
+    text-decoration: none;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    box-sizing: border-box;
+    line-height: 50px;
 }
 
-li a:hover {
+.navBar li a:hover {
     background-color: #f8b878;
 }
 
-.active {
+.navBar li a.active {
     background-color: #008080;
-    padding: 16px 10px;
 }
 
 
@@ -101,11 +114,6 @@ li a:hover {
 
 main {
     z-index: 1;
-}
-
-.gridContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .aside1 {
@@ -119,7 +127,15 @@ main {
     border-bottom-right-radius: 30px;
 }
 
-.subtitle1 {
+/* .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* kept as 6fr to seaprate section for Asides, but these will be empty.*/
+    /* padding: 15%;
+} */
+
+/* ORIGINAL CODE
+
+.welcomeIntro {
     grid-column: 2 / 6;
 }
 
@@ -135,11 +151,11 @@ main {
     border-bottom-left-radius: 30px;
 }
 
-.mainSection1 {
+.aboutUs {
     grid-column: 2 / 6;
 }
 
-.mainSection2 {
+.ourMission {
     grid-column: 2 / 6;
 }
 
@@ -151,7 +167,7 @@ main {
     grid-column: 2 / 6;
 }
 
-
+*/
 
 /* ---------- FOOTER STYLE ---------- */
 
