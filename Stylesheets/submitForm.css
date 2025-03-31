@@ -16,8 +16,6 @@ body {
     font-variation-settings: "wdth" 100;
 }
 
-
-
 /* ----- HEADER STYLE ----- */
 
 header {
@@ -33,8 +31,6 @@ header {
     justify-content: space-between;
     overflow: visible;
 }
-
-
 
 /* ---------- STICKY NAV STYLE ---------- */
 
@@ -101,8 +97,6 @@ header {
     background-color: #008080;
 }
 
-
-
 /* ----- MAIN STYLE ----- */
 
 main {
@@ -112,8 +106,6 @@ main {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
-
 
 /* ----- FOOTER STYLE ----- */
 

@@ -92,7 +92,7 @@
                     </section>
 
                     <section class="ourMission">
-                        <h3>Our Mission</h3>
+                        <h3>Our Mission:</h3>
                         <p>
                             At our core, we believe that everyone should have access to exercise, no matter your gender, sexuality, ethnicity, body shape, religion, disability, or additional needs. No matter who you are, you are a human being with a human body, which deserves to be treated with care and respect.
                         </p>
@@ -125,7 +125,54 @@
                         <p>
                             You are not alone in this journey, and there's often no one better to help you than someone who's been there, and knows the journey ahead firsthand!
                         </p>
-                            Sign up and become the next member of our family!
+                    </section>
+
+                    <section class="signupForm">
+                        <form action="submitForm.html" method="post">
+                            <fieldset class="formBox">
+                                
+                                <legend><b>Become the next member of our family!</b></legend>
+                                
+                                <label for="fullName">Full Name<span class="requiredFieldAsterisk">*</span>:</label>
+                                <input type="text" id="fullName" name="fullName" required>
+                                
+                                <br>
+                                
+                                <label for="nickname">Nickname:</label>
+                                <input type="text" id="nickname" name="nickname">
+
+                                <br>
+                                
+                                <label for="email">Email<span class="requiredFieldAsterisk">*</span>:</label>
+                                <input type="email" id="email" name="email" required>
+                                
+                                <br>
+                                
+                                <label for="password">Create Password<span class="requiredFieldAsterisk">*</span>:</label>
+                                <input type="password" id="password" name="password" required>
+                                
+                                <br>
+                                
+                                <label for="confirmpassword">Confirm Password<span class="requiredFieldAsterisk">*</span>:</label>
+                                <input type="password" id="password2" name="confirmpassword" required>
+                                
+                                <br>
+                                
+                                <label for="faveColour">Choose your favourite colour:</label>
+                                <input type="color" id="faveColour" name="faveColour">
+                                
+                                <br>
+                                
+                                <label for="comments">Tell us what brought you here:</label>
+                                <textarea id="comments" name="comments"></textarea> 
+                                <!--Never use placeholder text instead of a label as it disappears, and also cannot be read by screenreaders so poses an accessibility issue!!-->
+                                
+                                <br>
+                                
+                                <button type="submit">Sign Up</button>
+                                
+                            </fieldset>
+                        </form>
                     </section>
 
                 </section>
@@ -148,11 +195,11 @@
 
             <section>
             <h4>Follow Us:</h4>
-                <a href=""><img src="Images/socialMedia/Facebook_logo.png" alt="Link to my Facebook page." width="50px"></a>
-                <a><img src="Images/socialMedia/Instagram_logo.png" alt="Link to my Instagram pag.e" width="50px"></a>
-                <a><img src="Images/socialMedia/Discord_logo.png" alt="Link to my Discord." width="50px"></a>
-                <a><img src="Images/socialMedia/X_logo.png" alt="Link to my X page." width="50px"></a>
-                <a><img src="Images/socialMedia/YouTube_logo.png" alt="Link to my YouTube channel." width="50px"></a>
+                <a href="socials.html" target="_blank"><img src="Images/socialMedia/Facebook_logo.png" alt="Link to my Facebook page." width="50px" class="socialImg"></a>
+                <a href="socials.html"target="_blank" ><img src="Images/socialMedia/Instagram_logo.png" alt="Link to my Instagram pag.e" width="50px" class="socialImg"></a>
+                <a href="socials.html" target="_blank"><img src="Images/socialMedia/Discord_logo.png" alt="Link to my Discord." width="50px" class="socialImg"></a>
+                <a href="socials.html" target="_blank"><img src="Images/socialMedia/X_logo.png" alt="Link to my X page." width="50px" class="socialImg"></a>
+                <a href="socials.html" target="_blank"><img src="Images/socialMedia/YouTube_logo.png" alt="Link to my YouTube channel." width="50px" class="socialImg"></a>
             </section>
 
             <section>
@@ -163,6 +210,6 @@
 
     </body>
 
-    <script src="index.js"></script>
+    <script src="Scripts/index.js"></script>
 
 </html>

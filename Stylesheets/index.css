@@ -21,7 +21,23 @@ body {
     font-variation-settings: "wdth" 100;
 }
 
+h1 {
+    font-family: "Copperplate Gothic", "Castellar Regular", "Felix Titling Regular", "Perpetua Titling MT", "Quicksand", sans-serif;
+}
 
+h2 {
+    font-family: "Reprise Stamp Std Regular";
+}
+
+/* Castellar Regular
+Copperplate Gothic
+Felix Titling Regular
+Perpetua Titling MT
+Reprise Stamp Std Regular */
+
+h3 {
+    font-family: "Felix Titling Regular", "Perpetua Titling MT", "Quicksand", sans-serif;
+}
 
 /* ---------- HEADER STYLE ---------- */
 
@@ -46,7 +62,7 @@ header {
 
 .heroDiv h1 {
     font-size: 4rem;
-    font-family: "Copperplate", "Balthazar", "Franklin Gothic Medium", "Arial Narrow", "Arial", sans-serif;
+    font-family: "Copperplate Gothic", "Balthazar", "Franklin Gothic Medium", "Arial Narrow", "Arial", sans-serif;
 }
 
 .headerButton {
@@ -88,6 +104,7 @@ header {
     height: 50px;
     margin: 0;
     padding: 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navBar ul {
@@ -155,10 +172,9 @@ main {
 
 aside {
     align-self: flex-start;
-    position: sticky;
-    top: 40;
     z-index: 500; /* lower than navbar so navbar is always top */
     margin: 2%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .leftAside {
@@ -171,7 +187,7 @@ aside {
     border-bottom-right-radius: 30px;
     padding: 10px 15px;
     position: sticky;
-    top: 40;
+    top: 90px;
 }
 
 .rightAside {
@@ -183,6 +199,8 @@ aside {
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     padding: 10px 15px;
+    position: sticky;
+    top: 90px;
 }
 
 .gridContainer {
@@ -207,13 +225,12 @@ aside {
     padding: 0.3% 0.8%;
     border-color: #c0b599;
     transition: 0.4s ease;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .aboutUsButton:hover {
     transform: scale(1.1);
 }
-
-
 
 .ourMission {
     grid-column: 1 / 7;
@@ -227,13 +244,53 @@ aside {
     grid-column: 1 / 7;
 }
 
+.signupForm legend {
+    text-align: center;
+}
+
+.formBox {
+    width: 45%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px  solid #008080;
+    padding: 10px;
+}
+
+.formBox label {
+    display: block;
+    float: left;
+}
+
+.formBox input {
+    width: 100%;
+}
+
+.requiredFieldAsterisk {
+    color: red;
+    font-weight: bold;
+}
+
 
 
 /* ---------- FOOTER STYLE ---------- */
 
 footer {
-    background-color: #a0c1b8;
+    background-color: #619587;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
+    border-top: 2px solid #008080;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    color: honeydew;
+}
+
+footer h4 {
+    font-size: 1.5em;
+}
+
+.socialImg {
+    transition: transform 0.4s ease;
+}
+
+.socialImg:hover {
+    transform: scale(1.1);
 }
