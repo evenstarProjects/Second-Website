@@ -1,0 +1,120 @@
+body {
+    /* BACKGROUND*/
+    background-color: #faf3e0;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    /* FONT */
+    color: #4a4a4a;
+    font-family: "Quicksand", "Montserrat", "Open Sans", "Bellota Text", "Poiret One", "Verdana", sans-serif;
+    font-size: 16pt;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+header {
+    font: "copperplate gothic";
+    background-color: #a0c1b8;
+    padding-top: 3%;
+}
+
+/* STICKY NAV BAR */
+
+.stickyNav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navBar {
+    list-style-type: none;
+    background-color: #619587;
+    text-align: center;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navBar ul {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.navBar li {
+    display: inline;
+    text-align: center;
+    position: relative; /*needed for ::before to line up properly.*/
+}
+
+/* (navBar central lines) */
+.navBar li:not(:first-child)::before {  /*adds line to all but first one*/
+    content: "|";
+    position: absolute;
+    left: -2px;
+    top: 50%;
+    transform: translateY(-50%); /* without this, lines do not align into navbar. */
+    font-size: 25pt;
+    color: #74b1a067;
+}
+
+.navBar li a {
+    color: honeydew;
+    text-align: center;
+    text-decoration: none;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    box-sizing: border-box;
+    line-height: 50px;
+}
+
+.navBar li a:hover {
+    background-color: #008080;
+}
+
+.navBar li a.active {
+    background-color: #008080;
+}
+
+
+
+/* MAIN: */
+
+.flexboxClickableGallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    justify-content: center;
+}
+
+.flexboxClickableGallery img {
+    width:25%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.flexboxClickableGallery img:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* FOOTER: */
+footer {
+    background-color: #619587;
+    padding-bottom: 4px;
+    padding-top: 3px;
+    text-align: center;
+}
+

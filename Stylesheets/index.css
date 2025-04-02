@@ -88,6 +88,18 @@ header {
     text-decoration: none;
 }
 
+.headerP {
+    padding: 0;
+    margin: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+/* .heroDiv svg .leaf1 {
+} */
+
+
+
 
 /* ---------- STICKY NAV STYLE ---------- */
 
@@ -248,7 +260,12 @@ aside {
     text-align: center;
 }
 
+.signupFormBox {
+    grid-column: 1 / 7;
+}
+
 .formBox {
+    grid-column: 2 / 7;
     width: 45%;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
     border: 2px  solid #008080;
