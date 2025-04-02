@@ -26,7 +26,8 @@ h1 {
 }
 
 h2 {
-    font-family: "Reprise Stamp Std Regular";
+    font-family: "Felix Titling Regular", "Perpetua Titling MT", "Quicksand", sans-serif;
+    font-size: 1.7em;
 }
 
 /* Castellar Regular
@@ -42,7 +43,7 @@ h3 {
 /* ---------- HEADER STYLE ---------- */
 
 header {
-    height: 94vh;
+    height: 94.5vh;
     background-color: #a0c1b8;
     display: flex;
     flex-direction: column;
@@ -197,7 +198,7 @@ aside {
 }
 
 .leftAside {
-    width: 12%;
+    min-width: 12%;
     margin-top: 40px;
     margin-bottom: 40px;
     margin-left: 0px;
@@ -210,7 +211,7 @@ aside {
 }
 
 .rightAside {
-    width: 12%;
+    min-width: 12%;
     margin-top: 40px;
     margin-bottom: 40px;
     margin-right: 0px;
@@ -230,6 +231,7 @@ aside {
 }
 
 .welcomeIntro {
+    padding-top: 40px;
     grid-column: 1 / 7;
 }
 
@@ -273,6 +275,7 @@ aside {
 
 .formBox {
     grid-column: 2 / 7;
+    margin: 0 auto;
     width: 45%;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
     border: 2px  solid #008080;
