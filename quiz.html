@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="en-gb">
+
+<head>
+
+    <!-- TAB DETAILS -->
+    <title>Quiz - Helix: Holistic Fitness Training</title>
+    <link rel="icon" type="img/png" href="Images/companyLogo.png">
+
+    <!-- META INFO -->
+    <meta charset="UTF-8">
+    <meta name="description" content="A Quiz to help figure out how to help the user with their health and fitness, aimed particularly at people with physical and mental health disabilities, who are Neurodiverse, or members of the LGBTQ+ community, to learn and achieve their health and fitness goals in a safe and holistic way.">
+    <meta name="keywords" content="Fitness, Health, Personal Training, Exercise, Recovery, Injury Recovery, Safe Exercise, Fitness Blog, Holistic Exercise, Exercise for Disability, Exercise for Mental Health, Recovery for Eating Disorders, Healthy exercise for Eating Disorders, Exercise for Neurodivergent, Exercise for LGBTQ+">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="Stylesheets/pageStyle.css">
+    <!--(Open Sans = main font - links 1+2 for performance, link 3 for actual font)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&family=Bellota+Text:wght@400;700&family=Poiret+One&display=swap" rel="stylesheet"> <!--(Text Font)-->
+    <link href="https://fonts.googleapis.com/css2?family=Balthazar&display=swap" rel="stylesheet"> <!--(Heading Font)-->
+
+</head>
+
+    <body>
+
+        <header>
+
+            <h1>Helix: Holistic Fitness Company</h1>
+
+            <nav class="navBar">
+                <ul>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="exercise.html" class="active">Exercise</a></li>
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                    <li><a href="mentalHealth.html">Mental Health</a></li>
+                    <li><a href="login.html">Member Login</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+
+
+        <main>
+
+            <section>
+
+            <h2 class="quizHeader">The Quiz</h2>
+
+            </section>
+
+            <section class="quizSection">
+
+                <form name="quiz" id="quizPage">
+            
+                    <fieldset class="quizQuestions">
+                        <legend class="boldLegend">Which of the following best describes your current exercise regime?</legend>
+                        <input type="radio" name="currentExercise" id="veryLittle" value="veryLittle">
+                        <label for="veryLittle">Almost nothing. I might have a desk job, or spend a long time sitting at home. I might choose to drive or get a taxi rather than walk or cycle to places.</label>
+                        <br>
+                        <input type="radio" name="currentExercise" id="some" value="some">
+                        <label for="some">I do a bit. I might have a desk job, but choose to go for a walk in my free time, or walk to the shops. I might go to the gym 1x/week.</label>
+                        <br>
+                        <input type="radio" name="currentExercise" id="moderate" value="moderate">
+                        <label for="moderate">I try to keep active. I might go to the gym 2x/week, or do a lot of walking. Perhaps my job is more physically demanding than a lot of other jobs.</label>
+                        <br>
+                        <input type="radio" name="currentExercise" id="lots" value="lots">
+                        <label for="lots">I really care about exercise. I might go to the gym 3-4x/week and/or walk everywhere if I can. Perhaps my job is a lot more physically demanding, like manual work where I'm always on the move or have to carry heavy objects.</label>
+                        <br>
+                        <input type="radio" name="currentExercise" id="tooMuch" value="tooMuch">
+                        <label for="tooMuch">I am probably doing too much. I am in the gym 6-7x/week, on top of my physically active job, and I go for long walks daily. Exercise occupies all of my time and I have little time left to enjoy other things.</label>
+                    </fieldset>
+                    <br>
+                    <fieldset class="quizQuestions">
+                        <legend class="boldLegend">Which of the following best describes how you feel about your current exercise habits?</legend>
+                        <input type="radio" name="exerciseRelationship" id="poorLow" value="poorLow">
+                        <label for="poorLow">Poor - I feel like I don't do enough and I'm worried about my health.</label>
+                        <br>
+                        <input type="radio" name="exerciseRelationship" id="poorHigh" value="poorHigh">
+                        <label for="poorHigh">Poor - I feel like I do too much and I'm worried about my health.</label>
+                        <br>
+                        <input type="radio" name="exerciseRelationship" id="okayLow" value="okayLow">
+                        <label for="okayLow">Okay - it's not bad but I wish I did a bit more.</label>
+                        <br>
+                        <input type="radio" name="exerciseRelationship" id="okayHigh" value="okayHigh">
+                        <label for="okayHigh">Okay - it's not bad but I wish I did a bit less.</label>
+                        <br>
+                        <input type="radio" name="exerciseRelationship" id="good" value="good">
+                        <label for="good">Good - I am content with what I'm doing, but there may be room for improvements here and there.</label>
+                        <br>
+                        <input type="radio" name="exerciseRelationship" id="great" value="great">
+                        <label for="great">Great - I am very happy with the amount I'm doing right now, and there's little I would change.</label>
+                    </fieldset>
+                    <br>
+                    <fieldset class="quizQuestions">
+                        <legend class="boldLegend">Which of the following best describes how you feel about your relationship with food?</legend>
+                        <input type="radio" name="foodRelationship" id="poorUndereat" value="poorUndereat">
+                        <label for="poorLow">Poor - I feel like I don't eat enough/eat poorly and I'm worried about my health.</label>
+                        <br>
+                        <input type="radio" name="foodRelationship" id="poorOvereat" value="poorOvereat">
+                        <label for="poorHigh">Poor - I feel like I eat too much/eat poorly and I'm worried about my health.</label>
+                        <br>
+                        <input type="radio" name="foodRelationship" id="notBad" value="notBad">
+                        <label for="okayLow">Okay - it's not bad but I wish I had a better relationship with food.</label>
+                        <br>
+                        <input type="radio" name="foodRelationship" id="good" value="good">
+                        <label for="good">Good - I am generally content with the quantity and quality of what I'm eating, but there may be room for improvements here and there.</label>
+                        <br>
+                        <input type="radio" name="exerciseRelationship" id="great" value="great">
+                        <label for="great">Great - I am very happy with the my eating habits right now, and there's little I would change.</label>
+                    </fieldset>
+                    <br>
+                    <fieldset class="quizQuestions">
+                        <legend class="boldLegend" >How much free time have you got at the moment?</legend>
+                        <input type="radio" name="freeTime" id="none" value="none">
+                        <label for="none">None - I really struggle to find time to exercise or improve myself.</label>
+                        <br>
+                        <input type="radio" name="freeTime" id="some" value="some">
+                        <label for="some">A bit - I feel very busy but I could probably rearrange a few things with some help.</label>
+                        <br>
+                        <input type="radio" name="freeTime" id="decent" value="decent">
+                        <label for="decent">A decent amount - I can definitely fit in some more exercise or dedicate time to working on myself.</label>
+                        <br>
+                        <input type="radio" name="freeTime" id="lots" value="lots">
+                        <label for="lots">A lot - I perhaps don't work full time, or have a day off, and just need help with the "doing" part of habit-building.</label>
+                        <br>
+                        <input type="radio" name="freeTime" id="tons" value="tons">
+                        <label for="tons">Almost all the time in the world - I perhaps don't work at all, or work part-time. I have a lot of free time to dedicate to exercise or personal growth, and still have some left over.</label>
+                    </fieldset>
+                    <br>
+                    <fieldset class="quizQuestions">
+                        <legend class="boldLegend">Which of the following are barriers that are affecting your ability to achieve your goals, whether exercise, food, mindfulness, or any other goals you have?</legend>
+                        <input type="checkbox" name="barriers" id="time" value="time">
+                        <label for="time">Time - time is limited for me.</label>
+                        <br>
+                        <input type="checkbox" name="barriers" id="money" value="money">
+                        <label for="money">Money - I have little to no disposable income to spend on myself.</label>
+                        <br>
+                        <input type="checkbox" name="barriers" id="family" value="family">
+                        <label for="family">Family - I have children to care for, or I am a carer for a family member, or I have another family-related responsibility which impacts my goals.</label>
+                        <br>
+                        <input type="checkbox" name="barriers" id="work" value="work">
+                        <label for="work">Work - my work takes up a lot of time, headspace, or energy, leaving me with little to give to my goals.</label>
+                        <br>
+                        <input type="checkbox" name="barriers" id="physicalHealth" value="physicalHealth">
+                        <label for="physicalHealth">Physical Health - I have some physical health issues that prevent me from doing everything I want to do.</label>
+                        <br>
+                        <input type="checkbox" name="barriers" id="mentalHealth" value="mentalHealth">
+                        <label for="mentalHealth">Mental Health - I have some mental health issues that prevent me from doing everything I want to do.</label>
+                        <br>
+                        <input type="checkbox" name="barriers" id="learningDifficulties" value="learningDifficulties">
+                        <label for="learningDifficulties">Learning Difficulties - I have some additional learning needs that make it hard to complete my goals without support.</label>
+                        <br>
+                        <input type="checkbox" name="barriers" id="undecided" value="undecided">
+                        <label for="undecided">Undecided Goals - I'm not quite sure what my goals are and I need some help figuring them out.</label>
+                        <br>
+                        <input type="checkbox" name="barriers" id="personalBarrier" value="personalBarrier">
+                        <label for="personalBarrier">A Personal or Emotional Barrier - I have a specific thought or behaviour that is stopping me achieve my goals (examples of this could be: procrastination, perfectionism, peer pressure, fear of failure, feeling unmotivated, or feeling overwhelmed.)</label>
+                        <br>
+                        <br>
+                        <label for="whichOne">Please type below which of the choices you selected above is your BIGGEST barrier:</label>
+                        <input type="text" id="whichOne" name="whichOne">
+                    </fieldset>
+
+            </section>
+
+        </main>
+
+
+
+        <footer>
+
+            <section>
+                <h4>Follow Us:</h4>
+                    <a href="socials.html" target="_blank"><img src="Images/socialMedia/Facebook_logo.png" alt="Link to my Facebook page." width="50px" class="socialImg"></a>
+                    <a href="socials.html"target="_blank" ><img src="Images/socialMedia/Instagram_logo.png" alt="Link to my Instagram pag.e" width="50px" class="socialImg"></a>
+                    <a href="socials.html" target="_blank"><img src="Images/socialMedia/Discord_logo.png" alt="Link to my Discord." width="50px" class="socialImg"></a>
+                    <a href="socials.html" target="_blank"><img src="Images/socialMedia/X_logo.png" alt="Link to my X page." width="50px" class="socialImg"></a>
+                    <a href="socials.html" target="_blank"><img src="Images/socialMedia/YouTube_logo.png" alt="Link to my YouTube channel." width="50px" class="socialImg"></a>
+                </section>
+    
+                <section>
+                    <p>&copy; 2025 Helen Portrey @ Helix: Holistic Fitness Training. All rights reserved.</p>
+                </section>
+
+        </footer>
+
+    </body>
+
+</html>

@@ -31,28 +31,17 @@ header {
 
 .navBar {
     list-style-type: none;
+    margin: 0px;
+    overflow: hidden;
     background-color: #619587;
     text-align: center;
-    height: 50px;
-    margin: 0;
-    padding: 0;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.navBar ul {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    text-align: center;
 }
 
 .navBar li {
     display: inline;
     text-align: center;
-    position: relative; /*needed for ::before to line up properly.*/
+    position: relative; /* needed for ::before to line up properly. */
 }
 
 /* (navBar central lines) */
@@ -71,12 +60,8 @@ header {
     text-align: center;
     text-decoration: none;
     padding: 0 15px;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    height: 100%;
     box-sizing: border-box;
-    line-height: 50px;
 }
 
 .navBar li a:hover {
@@ -113,8 +98,23 @@ header {
 /* FOOTER: */
 footer {
     background-color: #619587;
-    padding-bottom: 4px;
-    padding-top: 3px;
+    padding: 4%;
     text-align: center;
+    color: honeydew;
 }
 
+/* ----- QUIZ PAGE STYLING ----- */
+
+.quizHeader {
+    padding: 2% 0% 0% 5%;
+    font-size: 2em;
+}
+
+.quizSection {
+    padding: 8%;
+}
+
+.boldLegend {
+    font-weight: bold;
+    text-align: center;
+}

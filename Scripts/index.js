@@ -1,5 +1,3 @@
-// HEADER BUTTON
-
 /* Button Method Broken Down Into Steps:
 1. document.querySelector is good method for IDs and Classes.
 2. const headerButton = document.querySelector('.headerButton'); retrieves the Button from the HTML using its Class name.
@@ -15,6 +13,7 @@
         "center" would align to centre. "end" would align to bottom.
 */
 
+// HEADER BUTTON
 // Select button using class
 const headerButton = document.querySelector('.headerButton');
 
@@ -33,7 +32,7 @@ if (headerButton) {
 const aboutUsButton = document.querySelector('.aboutUsButton');
 
 if (aboutUsButton) { 
-    headerButton.addEventListener('click', (event) => {
+    aboutUsButton.addEventListener('click', (event) => {
         event.preventDefault();
 
         const target = document.querySelector('#aboutUsButtonDestination');
