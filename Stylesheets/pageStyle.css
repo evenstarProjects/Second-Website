@@ -153,3 +153,18 @@ footer {
     font-weight: bold;
     text-align: center;
 }
+
+.buttonStyle {
+    display: block;       /* Ensures the button takes up its own line */
+    margin: 0 auto;       /* Centers the button horizontally */
+    padding: 10px 20px;   /* Adjusts the size */
+    font-size: 16px;      /* Makes the text larger */
+    background-color: #f8b878;
+    color: #4a4a4a;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;      /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s ease;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
