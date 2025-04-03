@@ -1,3 +1,31 @@
+/*
+WHAT DO I WANT HERE?
+This .css document should be a generic style for all of my other pages.
+I want my other pages to look the same.
+I want to lay out this CSS into the top area (what they all have) and bottom area (individual page styles).
+
+What do they have in common:
+1. General Body, inc. font, font size, font colour, background colour, padding, margin etc.
+2. Header, inc. title style, logo style etc.
+3. Nav Bar, inc. li items and stickyness.
+4. Asides, inc. link styles and stickyness, but maybe different links.
+5. Footer, inc. social media links and copyright.
+
+What the differences are:
+1. exercise.html styling
+2. nutrition.html styling
+3. mentalHealth.html styling
+4. login.html styling
+5. quiz.html styling
+
+Generic pages that need styling but don't really exist:
+1. submitForm.html styling
+2. socials.html styling
+3. mentalHealthResources.html styling
+*/
+
+/* ----- GENERAL STYLING ----- */
+
 body {
     /* BACKGROUND*/
     background-color: #faf3e0;
@@ -18,10 +46,10 @@ body {
 header {
     font: "copperplate gothic";
     background-color: #a0c1b8;
-    padding-top: 3%;
+    padding: 3%;
 }
 
-/* STICKY NAV BAR */
+/* GENERAL STICKY NAV BAR */
 
 .stickyNav {
     position: sticky;
@@ -41,19 +69,22 @@ header {
 .navBar li {
     display: inline;
     text-align: center;
-    position: relative; /* needed for ::before to line up properly. */
+    position: relative;
 }
+/* position: relative needed for ::before to line up properly. */
 
 /* (navBar central lines) */
-.navBar li:not(:first-child)::before {  /*adds line to all but first one*/
+.navBar li:not(:first-child)::before {
     content: "|";
     position: absolute;
     left: -2px;
     top: 50%;
-    transform: translateY(-50%); /* without this, lines do not align into navbar. */
+    transform: translateY(-50%);
     font-size: 25pt;
     color: #74b1a067;
 }
+/* .navBar li:not(:first-child)::before {  adds line to all but first one*/
+/* transform: translateY(-50%); without this, lines do not align into navbar. */
 
 .navBar li a {
     color: honeydew;
@@ -72,20 +103,32 @@ header {
     background-color: #008080;
 }
 
+/* GENERAL FOOTER */
 
+footer {
+    background-color: #619587;
+    padding: 4%;
+    text-align: center;
+    color: honeydew;
+}
 
-/* MAIN: */
+/* ----- EXERCISE.HTML STYLING ----- */
 
 .flexboxClickableGallery {
     display: flex;
     flex-wrap: wrap;
     gap: 2px;
     justify-content: center;
+    padding: 4%;
+}
+
+.classthing {
+    width:20%;
 }
 
 .flexboxClickableGallery img {
-    width:25%;
-    border-radius: 8px;
+    width:90%;
+    border-radius: 5%;
     transition: transform 0.3s ease;
 }
 
@@ -95,15 +138,7 @@ header {
 
 
 
-/* FOOTER: */
-footer {
-    background-color: #619587;
-    padding: 4%;
-    text-align: center;
-    color: honeydew;
-}
-
-/* ----- QUIZ PAGE STYLING ----- */
+/* ----- QUIZ.HTML STYLING ----- */
 
 .quizHeader {
     padding: 2% 0% 0% 5%;
