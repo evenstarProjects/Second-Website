@@ -6,7 +6,7 @@
 
     <!-- TAB DETAILS -->
     <title>Quiz - Helix: Holistic Fitness Training</title>
-    <link rel="icon" type="img/png" href="Images/companyLogo.png">
+    <link rel="icon" type="img/png" href="../Images/companyLogo.png">
 
     <!-- META INFO -->
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- STYLES -->
-    <link rel="stylesheet" href="Stylesheets/pageStyle.css">
+    <link rel="stylesheet" href="../Stylesheets/pageStyle.css"> <!-- The .. links up a parent, so you can get back to 2nd website folder. -->
     <!--(Open Sans = main font - links 1+2 for performance, link 3 for actual font)-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,12 +28,13 @@
 
         <header>
 
-            <h1>Helix: Holistic Fitness Company</h1>
+            <img src="../Images/companyLogo.png" width="18%" height="auto" class="headerLogo">
+            <h1>Helix: Holistic Fitness Training</h1>
 
             <nav class="navBar">
                 <ul>
-                    <li><a href="index.html">Homepage</a></li>
-                    <li><a href="exercise.html" class="active">Exercise</a></li>
+                    <li><a href="../index.html">Homepage</a></li>
+                    <li><a href="exercise.html">Exercise</a></li>
                     <li><a href="nutrition.html">Nutrition</a></li>
                     <li><a href="mentalHealth.html">Mental Health</a></li>
                     <li><a href="login.html">Member Login</a></li>
@@ -165,6 +166,7 @@
                         <input type="text" id="whichOne" name="whichOne">
                     </fieldset>
 
+                    <button type="submit">Get your Results</button>
             </section>
 
         </main>
