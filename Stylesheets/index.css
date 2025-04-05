@@ -104,9 +104,20 @@ header {
     font-size: 1.2em;
 }
 
-/* .heroDiv svg .leaf1 {
-} */
+svg {
+    position: relative;
+    border: 1px solid black;
+}
 
+#leaf1 {
+    fill: #f8b878;
+    transform: scale(0.5) translateX(164.5%) translateY(34%) rotate(45deg);
+  }
+
+  #leaf2 {
+    fill: #f8b878;
+    transform: scale(0.5) translateX(13.5%) translateY(145%) rotate(315deg);
+  }
 
 
 
