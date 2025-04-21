@@ -56,7 +56,7 @@ header {
 .h1andLogo {
     display: flex;
     justify-content: center;
-    margin-top: 3%;
+    margin-top: 6%;
 } 
 
 .heroDiv {
@@ -80,6 +80,9 @@ header {
     padding: 10px 20px;
     transition: transform 0.4s ease;
     cursor: pointer;
+    margin: 9%;
+    white-space: nowrap;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .headerButton:hover {
@@ -109,15 +112,19 @@ svg {
     border: 1px solid black;
 }
 
-#leaf1 {
-    fill: #f8b878;
+#orangeLeaf1 {
+    fill: black;
     transform: scale(0.5) translateX(164.5%) translateY(34%) rotate(45deg);
   }
 
-  #leaf2 {
-    fill: #f8b878;
+  #orangeLeaf2 {
+    fill: black;
     transform: scale(0.5) translateX(13.5%) translateY(145%) rotate(315deg);
   }
+
+#greenLeaves1 {
+    transform: scale(0.5) translateX(15%) translateY(50%) rotate(340deg);
+}
 
 
 
@@ -252,11 +259,11 @@ aside {
 }
 
 .aboutUsButton {
-    background-color: #e0d6bb;
+    background-color: #f8b878;
     font-size: 1rem;
     border-radius: 30%;
     padding: 0.3% 0.8%;
-    border-color: #c0b599;
+    border-color: #e3a970;
     transition: 0.4s ease;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -264,6 +271,10 @@ aside {
 
 .aboutUsButton:hover {
     transform: scale(1.1);
+}
+
+.aboutUsLink {
+    color: #e3a970;
 }
 
 .ourMission {
